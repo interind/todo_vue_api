@@ -1,0 +1,23 @@
+{
+  "mongodbUrl": "mongodb://localhost:27017/todos",
+  "secretKey": "create todos",
+  "PORT": 5000,
+  "create": 201,
+  "conflictCode": 11000,
+  "default": 500,
+  "messageCreateUser": "Пользователь успешно создан",
+  "messageErrorCreateUser": "Ошибка при создание пользователя",
+  "messageForbidden": "Ошибка прав доступа",
+  "messageNotFound": "Запрашиваемый ресурс не найден",
+  "messageNotUpdate": "Нечего обновлять",
+  "messageUnauthorized": "Ошибка авторизации",
+  "messageUnauthorizedToken": "Ошибка токена",
+  "messageUnregistered": "Ошибка регистрации",
+  "messageConflictEmail": "Такой email уже используется",
+  "messageNotValidNumber": "Такой номер недопустим",
+  "messageErrorUrl": "Проверьте валидность ссылки",
+  "messageErrorEmail": "Проверьте email",
+  "messageErrorEmailPassword": "Неверный email или password",
+  "messageBadRequest": "Некорректные данные",
+  "messageErrorRequired": "Поле должно быть заполнено"
+}
