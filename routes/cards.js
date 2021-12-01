@@ -15,9 +15,7 @@ router.post('/cards',
     body: Joi.object().keys({
       title: Joi.string().min(2).max(30).regex(regProfile)
         .required(),
-      description: Joi.string().min(10).max(200)
-        .required(),
-      date: Joi.date().min(2).max(30)
+      body: Joi.string().min(10).max(200)
         .required(),
     }),
   }), createCard);

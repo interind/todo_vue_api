@@ -7,7 +7,7 @@ const cardSchema = new mongoose.Schema({
     maxlength: 30,
     required: true,
   },
-  description: {
+  body: {
     type: String,
     required: true,
     minlength: 10,
@@ -24,11 +24,6 @@ const cardSchema = new mongoose.Schema({
     ref: 'user',
   },
   date: {
-    type: Date,
-    required: true,
-    default: Date.now,
-  },
-  createdAt: {
     type: Date,
     default: Date.now,
   },
