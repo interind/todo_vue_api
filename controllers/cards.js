@@ -3,7 +3,7 @@ const config = require('config');
 const Card = require('../models/card');
 
 module.exports.getCards = (req, res, next) => {
-  Card.find({})
+  Card.find({ owner: req.user._id })
     .then((cards) => res.send(cards.reverse()))
     .catch(next);
 };
